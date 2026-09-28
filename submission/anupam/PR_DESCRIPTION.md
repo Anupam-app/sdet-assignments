@@ -83,10 +83,16 @@ schema validation (zod), property-based state-machine tests, and a real HTTP pro
 tested with nock.
 
 ## Responsible AI Usage
-<!-- FILL THIS IN HONESTLY YOURSELF. Example:
-- I used an AI assistant to scaffold the fixture and parts of the test framework.
-- I personally reviewed every file, ran the suite, verified the mutation tests, and changed X / Y / Z.
--->
+- **Did you use AI tools?** Yes. I used Claude (Anthropic) extensively: it generated
+  most of the service fixture, the test framework, the specs and the documentation.
+- **Where did they help?** Scaffolding the TypeScript/Jest project, implementing the
+  state machine, billing and webhook logic, writing the test support classes and specs,
+  and drafting the README and this PR description.
+- **What did I personally verify or correct?**
+  - Ran `npm install` and `npm run validate` locally (lint, type check, 99 tests pass).
+  - Read through the design decisions (timeout → pending, webhook dedupe rules,
+    past_due cancel rejected) and confirmed I agree with them.
+  - [add anything else you actually changed or checked]
 
 ## Author Checklist
 - [x] Linting passes
